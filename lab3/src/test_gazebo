@@ -13,9 +13,9 @@ if __name__ == '__main__':
 
   robot_client = actionlib.SimpleActionClient('follow_joint_trajectory', FollowJointTrajectoryAction)
 
-  print "Waiting for server..."
+  print("Waiting for server...")
   robot_client.wait_for_server()
-  print "Connected to server"
+  print("Connected to server")
 
   joint_names = ['shoulder_pan_joint', 'shoulder_lift_joint', 'elbow_joint', 'wrist_1_joint', 'wrist_2_joint', 'wrist_3_joint']
   Q0 = [0.0, -1.0, 1.7, -2.2, -1.6, 0.0]
