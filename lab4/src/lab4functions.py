@@ -46,7 +46,7 @@ def jacobian_ur5(q, delta=0.0001):
 
     
     # Iteracion para la derivada de cada columna
-    for i in xrange(6):
+    for i in range(6):
         # Copiar la configuracion articular inicial
         dq = copy(q)
         # Incrementar la articulacion i-esima usando un delta
